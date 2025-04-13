@@ -1,21 +1,6 @@
-# Improved Python GenAI Application
+# Python GenAI Application
 
-This is an improved version of the Python GenAI application with enhanced features, security, and performance optimizations.
-
-## Key Improvements
-
-1. **Fixed Port Configuration**: Standardized port configuration across all files (8081)
-2. **Enhanced Environment Variable Handling**: Added validation and proper defaults
-3. **Health Check Endpoint**: Added `/health` endpoint for container orchestration
-4. **Improved Logging**: Configured structured logging with customizable log levels
-5. **Request Validation**: Added input validation and sanitization
-6. **Response Caching**: Implemented caching to improve performance
-7. **Security Headers**: Added security headers to protect against common web vulnerabilities
-8. **Rate Limiting**: Added rate limiting to prevent API abuse
-9. **API Documentation**: Added Swagger UI for API documentation at `/api/docs`
-10. **Optimized Docker Configuration**: Multi-stage build and non-root user
-11. **Improved User Interface**: Modern, responsive design with enhanced user experience
-12. **Static File Serving**: Properly configured static file serving for CSS, JavaScript, and images
+A Python-powered GenAI app you can run locally using your favorite LLM — just follow the guide to get started.
 
 ## Environment Variables
 
@@ -45,20 +30,7 @@ docker-compose up python-genai
 ### Running Locally
 
 ```bash
-cd improved-py-genai
+cd py-genai
 pip install -r requirements.txt
 python app.py
 ```
-
-## Security Considerations
-
-- The application uses security headers to protect against common web vulnerabilities
-- Input validation and sanitization is implemented to prevent injection attacks
-- Rate limiting is implemented to prevent abuse
-- The Docker container runs as a non-root user
-
-## Performance Optimizations
-
-- Response caching is implemented to improve performance
-- Multi-stage Docker build reduces image size
-- Environment variable validation prevents unnecessary API calls
