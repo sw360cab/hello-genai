@@ -1,1 +1,4 @@
 .idea
+# Rust
+rust-genai/target/
+rust-genai/**/*.rs.bk
