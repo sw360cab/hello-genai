@@ -6,12 +6,10 @@ RUN cargo new --bin rust-genai
 WORKDIR /usr/src/rust-genai/rust-genai
 # Copy manifests
 COPY Cargo.toml ./
-# Cache dependencies
-RUN cargo build --release
 # Copy source code
 COPY src ./src
 # Build for release
-RUN touch src/main.rs && cargo build --release
+RUN cargo build --release
 
 # Final stage
 FROM debian:bookworm-slim
