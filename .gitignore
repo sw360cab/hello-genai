@@ -2,3 +2,4 @@
 # Rust
 rust-genai/target/
 rust-genai/**/*.rs.bk
+.DS_Store
