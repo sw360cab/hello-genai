@@ -7,7 +7,7 @@ services:
       - "8082:8080"
     environment:
       - PORT=8080
-    x-genai-models:
+    models:
       - llama
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
